@@ -7,16 +7,16 @@ import { PreloadAllModules, RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutComponent } from './about/about.component';
+import { OverviewComponent } from './components/overview/overview.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
-        AboutComponent,
-        HomeComponent,
+        DetailComponent,
+        OverviewComponent,
         NavbarComponent
     ],
     imports: [

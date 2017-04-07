@@ -7,23 +7,24 @@ import { PreloadAllModules, RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { OverviewComponent } from './components/overview/overview.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { OverviewModule } from './components/overview/overview.module';
+
 
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
         DetailComponent,
-        OverviewComponent,
         NavbarComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
-        RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+        RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+        OverviewModule
     ]
 })
 export class AppModule {}

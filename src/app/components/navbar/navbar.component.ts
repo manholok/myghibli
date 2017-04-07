@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ROUTES } from '../../app.routes';
 
+import './navbar.scss';
+
 @Component({
     selector: 'navbar',
     templateUrl: './navbar.html'

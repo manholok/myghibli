@@ -1,6 +1,8 @@
 import { Component, Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
+import { FilmService } from '../../services/films.service';
+
 @Component({
     templateUrl: './overview.html'
 })
@@ -8,7 +10,8 @@ export class OverviewComponent {
     private response: Response;
     private json;
 
-    constructor(private http: Http) {
+    constructor(private http: Http, private filmService: FilmService) {
+
         // try and make a call
         this.http.get('https://ghibliapi.herokuapp.com/films').subscribe(resp => {
             this.response = resp;

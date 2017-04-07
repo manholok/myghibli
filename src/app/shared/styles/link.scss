@@ -1,0 +1,8 @@
+a {
+    color: $color-link-default;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

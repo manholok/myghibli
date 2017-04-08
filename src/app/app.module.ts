@@ -5,11 +5,11 @@ import { HttpModule } from '@angular/http';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 
 import { ROUTES } from './app.routes';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DetailComponent } from './components/detail/detail.component';
-import { OverviewModule } from './components/overview/overview.module';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { OverviewModule } from './components/overview/overview.module';
         FormsModule,
         HttpModule,
         RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
-        OverviewModule
+        ComponentsModule
     ]
 })
 export class AppModule {}

@@ -1,0 +1,31 @@
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.overview:after {
+    content: " ";
+    width: 30%;
+    margin: 1em;
+}
+
+.overview__film {
+    width: 30%;
+    height: 300px;
+    opacity: 0.3;
+    background-color: #cccccc;
+    background-image: url('../../../assets/castle_in_the_sky.jpg');
+    background-size: cover;
+    margin: 1em;
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+        transition-duration: 500ms;
+    }
+}

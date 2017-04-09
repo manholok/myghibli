@@ -1,1 +1,1 @@
-console.log("AOT WELL HELLO");
+console.log("get AOT working...");

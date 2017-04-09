@@ -5,6 +5,6 @@ import { DetailComponent } from './components/detail/detail.component';
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'overview', pathMatch: 'full' },
     { path: 'overview',  component: OverviewComponent },
-    { path: 'detailview', component: DetailComponent },
+    { path: 'films/:id', component: DetailComponent },
     { path: '**',  redirectTo: 'overview', pathMatch: 'full'  },
 ];

@@ -1,7 +1,5 @@
 import { Response } from '@angular/http';
 
-import { JsonProperty } from '../../shared/decorators/json-property';
-
 export class FilmModel {
     private id;
     private description;

@@ -9,14 +9,11 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { DetailComponent } from './components/detail/detail.component';
-
 
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
-        DetailComponent,
         NavbarComponent
     ],
     imports: [

@@ -1,3 +1,5 @@
+@import '../../shared/styles/colors';
+
 .overview {
     display: flex;
     flex-wrap: wrap;
@@ -12,20 +14,48 @@
 }
 
 .overview__film {
-    width: 30%;
+    display: flex;
+    width: 100%;
     height: 300px;
-    opacity: 0.3;
     background-color: #cccccc;
     background-image: url('../../../assets/castle_in_the_sky.jpg');
     background-size: cover;
     margin: 1em;
+}
 
-    p {
-        margin: 0;
-    }
+.overview__film__link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(255,255,255,0.5);
 
     &:hover {
-        opacity: 1;
         transition-duration: 500ms;
+        background-color: rgba(255,255,255,0);
+        text-decoration: none;
+    }
+}
+
+.overview__film__top {
+    flex: 1;
+}
+
+.overview__film__title {
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    color: $color-link-film;
+    margin: 0;
+    padding: 1em;
+}
+
+@media (min-width: 720px) {
+    .overview__film {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .overview__film {
+        width: 30%;
     }
 }

@@ -1,8 +1,10 @@
 <div class="overview">
 
     <div class="overview__film" *ngFor="let item of overviewService.currentFilms">
-        <a [routerLink]="['/films', item.id]">
-            <p>{{ item.title }}</p>
+
+        <a class="overview__film__link" [routerLink]="['/films', item.id]">
+            <div class="overview__film__top"></div>
+            <p class="overview__film__title">{{ item.title }}</p>
         </a>
     </div>
 </div>

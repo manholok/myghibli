@@ -19,6 +19,12 @@ export class FilmService {
         }
     }
 
-    getFilmDetails(id) {
+    async getFilmDetails(id) {
+        try {
+            let response = await this.backendService.getFilmDetails(id).toPromise();
+            return response;
+        } catch (error) {
+            return error;
+        }
     }
 }
